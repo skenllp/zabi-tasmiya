@@ -1,15 +1,14 @@
-// Firebase Configuration
-// IMPORTANT: Replace these with your own Firebase project credentials
-// Get them from: https://console.firebase.google.com/
+// Firebase Configuration — Zabi & Tasmiya (Wishes Wall)
+// Project: zabi-tasmiya
 
 var firebaseConfig = {
-  apiKey: "AIzaSyAnbLrIfm_MUUzA9V-bvc83n1wUA2Ys0PA",
-  authDomain: "sajjad-ayesha-wedding.firebaseapp.com",
-  databaseURL: "https://sajjad-ayesha-wedding-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "sajjad-ayesha-wedding",
-  storageBucket: "sajjad-ayesha-wedding.firebasestorage.app",
-  messagingSenderId: "951387094771",
-  appId: "1:951387094771:web:dd233c820e672126b4c186"
+  apiKey: "AIzaSyDHjUmwKyyEPv3dsGZyyB-TrR2jj3_U7Co",
+  authDomain: "zabi-tasmiya.firebaseapp.com",
+  databaseURL: "https://zabi-tasmiya-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "zabi-tasmiya",
+  storageBucket: "zabi-tasmiya.firebasestorage.app",
+  messagingSenderId: "531502470554",
+  appId: "1:531502470554:web:6c0f1c02fcfad27f811623"
 };
 
 // Initialize Firebase

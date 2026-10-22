@@ -50,7 +50,7 @@ window.WEDDING_CONFIG = {
   /* ── RSVP → GOOGLE SHEETS ────────────────────────────────────
      Paste your Google Apps Script Web App URL here (same one the
      original site used). RSVPs are posted to it as JSON.          */
-  sheetsUrl: '',
+  sheetsUrl: 'https://script.google.com/macros/s/AKfycbyNiLnZbY2Xdw6lS4f_19eTjh8GWKTZPIAANYT2HDRxfEz-7YihUCVE50ALrVxh2b_DpQ/exec',
 
   /* ── ADMIN (Wishes Wall moderation) ─────────────────────────
      Visit the site with ?admin=1 added to the URL, then enter this
