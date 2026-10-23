@@ -710,25 +710,25 @@ body.gate-active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   opacity: 0;
   animation: fadeIn 1s ease 2.5s forwards, heroScrollBounce 2.4s ease-in-out 3s infinite;
   background: rgba(212, 160, 23, 0.15);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 2px solid var(--gold);
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  padding: 20px 32px;
+  padding: 12px 20px;
   transition: var(--transition-fast);
-  box-shadow: 0 8px 24px rgba(212, 160, 23, 0.25);
+  box-shadow: 0 6px 20px rgba(212, 160, 23, 0.25);
 }
 
 .hero-scroll-hint:hover {
-  transform: translateX(-50%) translateY(-6px);
+  transform: translateX(-50%) translateY(-4px);
   background: rgba(212, 160, 23, 0.25);
   border-color: var(--gold-light);
-  box-shadow: 0 12px 32px rgba(212, 160, 23, 0.4);
+  box-shadow: 0 8px 24px rgba(212, 160, 23, 0.4);
 }
 
 .hero-scroll-hint:hover .scroll-mouse {
@@ -749,8 +749,8 @@ body.gate-active {
 }
 
 .scroll-mouse {
-  width: 24px;
-  height: 38px;
+  width: 20px;
+  height: 32px;
   border: 2px solid rgba(248, 235, 215, 0.6);
   border-radius: 2px;
   position: relative;
@@ -771,7 +771,7 @@ body.gate-active {
 }
 
 .scroll-text {
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.25em;
   color: var(--gold-light);
   text-transform: uppercase;
