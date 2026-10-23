@@ -724,7 +724,7 @@ body.gate-active {
   width: 24px;
   height: 38px;
   border: 2px solid rgba(248, 235, 215, 0.6);
-  border-radius: 12px;
+  border-radius: 2px;
   position: relative;
 }
 
