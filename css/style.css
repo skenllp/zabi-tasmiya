@@ -710,23 +710,29 @@ body.gate-active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   opacity: 0;
   animation: fadeIn 1s ease 2.5s forwards, heroScrollBounce 2.4s ease-in-out 3s infinite;
-  background: none;
-  border: none;
+  background: rgba(212, 160, 23, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid var(--gold);
+  border-radius: 8px;
   cursor: pointer;
-  padding: 8px;
+  padding: 20px 32px;
   transition: var(--transition-fast);
+  box-shadow: 0 8px 24px rgba(212, 160, 23, 0.25);
 }
 
 .hero-scroll-hint:hover {
-  transform: translateX(-50%) translateY(-4px);
+  transform: translateX(-50%) translateY(-6px);
+  background: rgba(212, 160, 23, 0.25);
+  border-color: var(--gold-light);
+  box-shadow: 0 12px 32px rgba(212, 160, 23, 0.4);
 }
 
 .hero-scroll-hint:hover .scroll-mouse {
   border-color: var(--gold-light);
-  box-shadow: 0 4px 12px rgba(212, 160, 23, 0.3);
 }
 
 .hero-scroll-hint:hover .scroll-wheel {
@@ -765,11 +771,12 @@ body.gate-active {
 }
 
 .scroll-text {
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  color: var(--gold-dark);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--gold-light);
   text-transform: uppercase;
   transition: var(--transition-fast);
+  font-weight: 600;
 }
 
 /* ===== OPENING INVITATION ===== */
@@ -3532,11 +3539,14 @@ footer {
 }
 
 /* hero: keep date card clear of the scroll hint */
-.hero-content { padding-bottom: 150px; }
+.hero-content { padding-bottom: 160px; }
 .hero-date { padding: 16px 22px; margin-top: 18px; }
-.hero-scroll-hint { bottom: 22px; }
-@media (max-width: 480px) { .hero-content { padding-bottom: 140px; } }
-#hero .hero-content { padding-bottom: 150px; }
+.hero-scroll-hint { bottom: 30px; }
+@media (max-width: 480px) { 
+  .hero-content { padding-bottom: 150px; }
+  .hero-scroll-hint { bottom: 20px; }
+}
+#hero .hero-content { padding-bottom: 160px; }
 
 /* desktop/tablet hero: names on one line each so the ring stays uncovered */
 @media (min-width: 768px) {

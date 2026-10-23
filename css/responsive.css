@@ -306,7 +306,16 @@
 /* ===== SHORT VIEWPORTS: avoid scroll-hint overlapping hero text ===== */
 @media (max-height: 700px) {
   .hero-scroll-hint {
-    display: none;
+    bottom: 16px;
+    padding: 12px 24px;
+  }
+}
+
+/* ===== MOBILE: Adjust scroll button position ===== */
+@media (max-width: 480px) {
+  .hero-scroll-hint {
+    bottom: 24px;
+    padding: 16px 28px;
   }
 }
 /* ===== OUR STORY RESPONSIVE ===== */
