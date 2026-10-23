@@ -3520,3 +3520,34 @@ footer {
   .hero-name-groom { margin-top: -12px; }
   .hero-bg-image img { object-position: 50% 42%; }
 }
+
+/* ── Gate: black-and-white ring photo — original gate treatment restored
+   (same filter, blur and clear overlay as the original site). Only the
+   focal point is set so the ring stays in view. */
+.gate-image img { object-position: 50% 36%; }
+
+/* Gate photo shown true-to-source: no blur, no brightness/contrast boost, no zoom-in crop */
+.gate-image img {
+  object-position: 50% 40%;
+  filter: none;
+  transform: none;
+  animation: none;
+}
+#gate.gate-closing .gate-image img { transform: scale(1.05); }
+
+/* Gate lettering: light cream so it is clearly visible on the dark photo */
+#gate .bp-top-label,
+#gate .bp-monogram-names,
+#gate .bp-monogram-date,
+#gate .bp-date,
+#gate .bp-subtitle {
+  color: #FFF3DA;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9), 0 2px 14px rgba(0,0,0,0.65);
+}
+#gate .bp-monogram-names em { color: #E8C56A; }
+#gate .bp-monogram-date { font-size: 9px; font-weight: 600; }
+#gate .bp-monogram {
+  border-color: rgba(255, 243, 218, 0.75);
+  background: rgba(0, 0, 0, 0.32);
+}
+#gate .bp-frame { border-color: rgba(255, 243, 218, 0.45); }
